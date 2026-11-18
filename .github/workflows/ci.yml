@@ -1,7 +1,6 @@
 name:CI
-on:[push]
-jobd:
-test:
+on: [push]
+jobs:
 runs-on: ubuntu-latest
 steps:
 users: actions/checkout@v4
