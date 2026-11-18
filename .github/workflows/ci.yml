@@ -1,0 +1,17 @@
+name:CI
+on:[push]
+jobd:
+test:
+runs-on: ubuntu-latest
+steps:
+users: actions/checkout@v4
+cat << 'EOF' > .github/workflows/ci.yml
+name:CI
+on:[push]
+jobd:
+test:
+runs-on: ubuntu-latest
+steps:
+-uses: actions/checkout@v4
+
+-run:python3 test_app.py
